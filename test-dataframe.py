@@ -27,6 +27,7 @@ data = [['12/01/2023','', '', '', '', '', '7:28'],
 ]
 
 df = pd.DataFrame(data, columns=['DATE', 'STAND', 'TYPE', 'HEAVY', 'WEIGHT', 'ARRIVAL', 'DEPARTURE'])
+df.head(25)
 
 df['ARRIVAL'] =  pd.to_datetime(df['ARRIVAL'])
 df['DEPARTURE'] =  pd.to_datetime(df['DEPARTURE'])
@@ -36,7 +37,7 @@ df['DEPARTURE'] = df['DEPARTURE'].dt.time
 
 # df['ΔDEP/ARR'] = (df['DEPARTURE'].sub(df['ARRIVAL'])) 
 
-df.to_csv("./datasets/test-dataframe.csv")
+df.to_csv("./datasets/test-dataframe.csv", index=False)
 
 
 
