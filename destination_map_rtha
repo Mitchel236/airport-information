@@ -70,8 +70,7 @@ def popup_html(row):
 """
     return html
 
-location = destinations['latitude_deg'].mean(), destinations['longitude_deg'].mean()
-
+location = [51.956902, 4.437220]
 m = folium.Map(location=location, zoom_start=3.5, zoom_control=False, scrollwheelzoom=False, dragging=False)
 
 for i in range(0, len(destinations)):
@@ -86,7 +85,7 @@ for i in range(0, len(destinations)):
     popup = folium.Popup(folium.Html(html, script=True), max_width=500)
 
     folium.CircleMarker(
-        radius= 1,
+        radius= 2,
         location= [destinations['latitude_deg'].iloc[i], destinations['longitude_deg'].iloc[i]],
         color=color,
         popup= popup
