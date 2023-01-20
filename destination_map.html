@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3d451d9d9f283c72a9eea2a02996353d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3d451d9d9f283c72a9eea2a02996353d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3d451d9d9f283c72a9eea2a02996353d = L.map(
+                "map_3d451d9d9f283c72a9eea2a02996353d",
+                {
+                    center: [42.259022180084216, 8.638343257153078],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3.5,
+                    zoomControl: false,
+                    preferCanvas: false,
+                    scrollwheelzoom: false,
+                    dragging: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_36577cd9150c26d1e260b914c1f3d323 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+            var circle_marker_900771f03b6d8ba205ad2df67ef564a4 = L.circleMarker(
+                [65.66000366210938, -18.07270050048828],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_9aa70490107e1f96bf4a16f09148d55a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_8d1d5b13ccca497a428e062df46cdfd4 = $(`<div id="html_8d1d5b13ccca497a428e062df46cdfd4" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Akureyri Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Akureyri</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">BIAR // AEY</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">6.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">65.66000366210938</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-18.07270050048828</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_9aa70490107e1f96bf4a16f09148d55a.setContent(html_8d1d5b13ccca497a428e062df46cdfd4);
+            
+        
+
+        circle_marker_900771f03b6d8ba205ad2df67ef564a4.bindPopup(popup_9aa70490107e1f96bf4a16f09148d55a)
+        ;
+
+        
+    
+    
+            var circle_marker_679e20a540e2cab04fb051a39c1b3371 = L.circleMarker(
+                [65.987602, 29.239401],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_74fb0b78b703f65e2d33e18035edacc7 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_143f902e4e44c3796a5664a9fff749f1 = $(`<div id="html_143f902e4e44c3796a5664a9fff749f1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Kuusamo Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Kuusamo</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">EFKS // KAO</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">866.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">65.987602</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">29.239401</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_74fb0b78b703f65e2d33e18035edacc7.setContent(html_143f902e4e44c3796a5664a9fff749f1);
+            
+        
+
+        circle_marker_679e20a540e2cab04fb051a39c1b3371.bindPopup(popup_74fb0b78b703f65e2d33e18035edacc7)
+        ;
+
+        
+    
+    
+            var circle_marker_c10dd4a107b156ffcc1e87ed978a1f09 = L.circleMarker(
+                [67.700996398926, 24.846799850464],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_6c750db63f741fc1158384b78baeef17 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_5a18ab3a15f014eea46b14dc62fa6e6f = $(`<div id="html_5a18ab3a15f014eea46b14dc62fa6e6f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Kittilä Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Kittilä</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">EFKT // KTT</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">644.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">67.700996398926</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">24.846799850464</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_6c750db63f741fc1158384b78baeef17.setContent(html_5a18ab3a15f014eea46b14dc62fa6e6f);
+            
+        
+
+        circle_marker_c10dd4a107b156ffcc1e87ed978a1f09.bindPopup(popup_6c750db63f741fc1158384b78baeef17)
+        ;
+
+        
+    
+    
+            var circle_marker_7be9a342223888747dfdf19c73840dca = L.circleMarker(
+                [66.564796447754, 25.830400466919],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_bb765560af6c40f2c3621aac47a4675a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_57ff34c299b88b721a8c38b487637560 = $(`<div id="html_57ff34c299b88b721a8c38b487637560" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Rovaniemi Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Rovaniemi</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">EFRO // RVN</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">642.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">66.564796447754</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">25.830400466919</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_bb765560af6c40f2c3621aac47a4675a.setContent(html_57ff34c299b88b721a8c38b487637560);
+            
+        
+
+        circle_marker_7be9a342223888747dfdf19c73840dca.bindPopup(popup_bb765560af6c40f2c3621aac47a4675a)
+        ;
+
+        
+    
+    
+            var circle_marker_604ea93ef1fa674057322f1e24e07aea = L.circleMarker(
+                [49.435001, -2.60197],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_24b170a8299b2e912d65d9cea306b368 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1e2c06e7763f920fb44c8338811c9bf2 = $(`<div id="html_1e2c06e7763f920fb44c8338811c9bf2" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Guernsey Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Saint Peter Port</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">EGJB // GCI</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">336.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">49.435001</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-2.60197</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_24b170a8299b2e912d65d9cea306b368.setContent(html_1e2c06e7763f920fb44c8338811c9bf2);
+            
+        
+
+        circle_marker_604ea93ef1fa674057322f1e24e07aea.bindPopup(popup_24b170a8299b2e912d65d9cea306b368)
+        ;
+
+        
+    
+    
+            var circle_marker_fbadda10093f5f378ec60b002630c5cc = L.circleMarker(
+                [49.20790100097656, -2.195509910583496],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_726a591480b702d307329cd8b6f9598b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b485e25e2077e22d0f9d7f08c845d2f4 = $(`<div id="html_b485e25e2077e22d0f9d7f08c845d2f4" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Jersey Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Saint Helier</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">EGJJ // JER</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">277.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">49.20790100097656</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-2.195509910583496</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_726a591480b702d307329cd8b6f9598b.setContent(html_b485e25e2077e22d0f9d7f08c845d2f4);
+            
+        
+
+        circle_marker_fbadda10093f5f378ec60b002630c5cc.bindPopup(popup_726a591480b702d307329cd8b6f9598b)
+        ;
+
+        
+    
+    
+            var circle_marker_c63001c5883bc97d79785c6a8f8d071b = L.circleMarker(
+                [51.505299, 0.055278],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_69468325dc48c6229394c65a75f09629 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_120d9d8624615a9e8d3b7e5b08458284 = $(`<div id="html_120d9d8624615a9e8d3b7e5b08458284" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">London City Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">London</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">EGLC // LCY</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">19.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">51.505299</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">0.055278</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_69468325dc48c6229394c65a75f09629.setContent(html_120d9d8624615a9e8d3b7e5b08458284);
+            
+        
+
+        circle_marker_c63001c5883bc97d79785c6a8f8d071b.bindPopup(popup_69468325dc48c6229394c65a75f09629)
+        ;
+
+        
+    
+    
+            var circle_marker_5f20feb6af4b291ad325ad353738f931 = L.circleMarker(
+                [55.950145, -3.372288],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_5c1d4c1586817531067707551fc621de = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_aec835c1cb26a2f4fef8990479987340 = $(`<div id="html_aec835c1cb26a2f4fef8990479987340" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Edinburgh Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Edinburgh</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">EGPH // EDI</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">135.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">55.950145</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-3.372288</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_5c1d4c1586817531067707551fc621de.setContent(html_aec835c1cb26a2f4fef8990479987340);
+            
+        
+
+        circle_marker_5f20feb6af4b291ad325ad353738f931.bindPopup(popup_5c1d4c1586817531067707551fc621de)
+        ;
+
+        
+    
+    
+            var circle_marker_e838d8324669b229facd4cbefe66da22 = L.circleMarker(
+                [51.956902, 4.43722],
+                {"bubblingMouseEvents": true, "color": "#FFBA08", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FFBA08", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_17bb17bde3032991d6bc620654f0302d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ca36f1094a1722a12663b5c318af2d08 = $(`<div id="html_ca36f1094a1722a12663b5c318af2d08" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Rotterdam The Hague Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Rotterdam</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">EHRD // RTM</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">-15.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">51.956902</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">4.43722</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_17bb17bde3032991d6bc620654f0302d.setContent(html_ca36f1094a1722a12663b5c318af2d08);
+            
+        
+
+        circle_marker_e838d8324669b229facd4cbefe66da22.bindPopup(popup_17bb17bde3032991d6bc620654f0302d)
+        ;
+
+        
+    
+    
+            var circle_marker_2082d4528c5dd10d33ff57f6ef231567 = L.circleMarker(
+                [64.62480163574219, 21.07690048217773],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_abfd535b91165c21c72a2c61fff15a73 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_edd23142460d4d1116844697ab5d29cd = $(`<div id="html_edd23142460d4d1116844697ab5d29cd" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Skellefteå Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Skellefteå</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">ESNS // SFT</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">157.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">64.62480163574219</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">21.07690048217773</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_abfd535b91165c21c72a2c61fff15a73.setContent(html_edd23142460d4d1116844697ab5d29cd);
+            
+        
+
+        circle_marker_2082d4528c5dd10d33ff57f6ef231567.bindPopup(popup_abfd535b91165c21c72a2c61fff15a73)
+        ;
+
+        
+    
+    
+            var circle_marker_8ddeea20f2388b536a788c991e254e4e = L.circleMarker(
+                [28.4527, -13.8638],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_7979bb8a38b05efb9a11eaf7738389fe = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_be55d8b8d0ce1c7b4bb59f1a361f1382 = $(`<div id="html_be55d8b8d0ce1c7b4bb59f1a361f1382" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Fuerteventura Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">El Matorral</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">GCFV // FUE</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">85.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">28.4527</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-13.8638</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_7979bb8a38b05efb9a11eaf7738389fe.setContent(html_be55d8b8d0ce1c7b4bb59f1a361f1382);
+            
+        
+
+        circle_marker_8ddeea20f2388b536a788c991e254e4e.bindPopup(popup_7979bb8a38b05efb9a11eaf7738389fe)
+        ;
+
+        
+    
+    
+            var circle_marker_1bd32db0bfa962d33048015a28f40327 = L.circleMarker(
+                [27.9319, -15.3866],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_c90d293da952548f7656d640aa04be61 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f0b3b9cdcc2a217d2751cb2b7f010401 = $(`<div id="html_f0b3b9cdcc2a217d2751cb2b7f010401" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Gran Canaria Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Gran Canaria Island</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">GCLP // LPA</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">78.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">27.9319</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-15.3866</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_c90d293da952548f7656d640aa04be61.setContent(html_f0b3b9cdcc2a217d2751cb2b7f010401);
+            
+        
+
+        circle_marker_1bd32db0bfa962d33048015a28f40327.bindPopup(popup_c90d293da952548f7656d640aa04be61)
+        ;
+
+        
+    
+    
+            var circle_marker_18513e35640f49ff0849dcedb7523281 = L.circleMarker(
+                [28.0445, -16.5725],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_a42f9d3b9ddecc4d45de34cf7b5f5838 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a3a5e28f1625995a13a76ea01f6bf286 = $(`<div id="html_a3a5e28f1625995a13a76ea01f6bf286" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Tenerife Sur Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Tenerife</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">GCTS // TFS</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">209.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">28.0445</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-16.5725</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_a42f9d3b9ddecc4d45de34cf7b5f5838.setContent(html_a3a5e28f1625995a13a76ea01f6bf286);
+            
+        
+
+        circle_marker_18513e35640f49ff0849dcedb7523281.bindPopup(popup_a42f9d3b9ddecc4d45de34cf7b5f5838)
+        ;
+
+        
+    
+    
+            var circle_marker_3d59736241355884ad725625cb9c4f82 = L.circleMarker(
+                [33.927299, -4.97796],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_73ef604385cde41324256cc9534509e2 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_dde18a00a31c9a2ed7a7e1b21fd510b2 = $(`<div id="html_dde18a00a31c9a2ed7a7e1b21fd510b2" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Fes Saïss International Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Saïss</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">GMFF // FEZ</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">1900.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">33.927299</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-4.97796</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_73ef604385cde41324256cc9534509e2.setContent(html_dde18a00a31c9a2ed7a7e1b21fd510b2);
+            
+        
+
+        circle_marker_3d59736241355884ad725625cb9c4f82.bindPopup(popup_73ef604385cde41324256cc9534509e2)
+        ;
+
+        
+    
+    
+            var circle_marker_7d0a4b03174e9eb034e5447bf456f0de = L.circleMarker(
+                [34.789558, -1.926041],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_3a1a0d17de2b1bb9af28469f1deb5527 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_dee2e054560487af8b61c704abec8a2a = $(`<div id="html_dee2e054560487af8b61c704abec8a2a" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Oujda Angads Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Ahl Angad</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">GMFO // OUD</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">1535.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">34.789558</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-1.926041</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_3a1a0d17de2b1bb9af28469f1deb5527.setContent(html_dee2e054560487af8b61c704abec8a2a);
+            
+        
+
+        circle_marker_7d0a4b03174e9eb034e5447bf456f0de.bindPopup(popup_3a1a0d17de2b1bb9af28469f1deb5527)
+        ;
+
+        
+    
+    
+            var circle_marker_d606a9d6c72360aefc31cf8e1873394f = L.circleMarker(
+                [34.9888, -3.02821],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_f38fe0278666bbecb643df57e2db393a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_76aae9565d58606436e43950cf6148ea = $(`<div id="html_76aae9565d58606436e43950cf6148ea" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Nador Al Aaroui International Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Al Aaroui</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">GMMW // NDR</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">574.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">34.9888</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-3.02821</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_f38fe0278666bbecb643df57e2db393a.setContent(html_76aae9565d58606436e43950cf6148ea);
+            
+        
+
+        circle_marker_d606a9d6c72360aefc31cf8e1873394f.bindPopup(popup_f38fe0278666bbecb643df57e2db393a)
+        ;
+
+        
+    
+    
+            var circle_marker_55a0dd0cc9557b4a15bf743efe4a16e5 = L.circleMarker(
+                [31.6068992615, -8.03629970551],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_c19e708fcb223500ab5192f719ccd32b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ecc4cf10fbe8425e68fb9e650e8a3416 = $(`<div id="html_ecc4cf10fbe8425e68fb9e650e8a3416" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Menara Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Marrakech</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">GMMX // RAK</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">1545.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">31.6068992615</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-8.03629970551</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_c19e708fcb223500ab5192f719ccd32b.setContent(html_ecc4cf10fbe8425e68fb9e650e8a3416);
+            
+        
+
+        circle_marker_55a0dd0cc9557b4a15bf743efe4a16e5.bindPopup(popup_c19e708fcb223500ab5192f719ccd32b)
+        ;
+
+        
+    
+    
+            var circle_marker_9b06c972c6fdc61c6d80e2b6ce446c17 = L.circleMarker(
+                [35.177101135253906, -3.83951997756958],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_10ffb499268908fb22a2e80cae5ec423 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d8a26bc68a063fa7ba6c5e13d446c678 = $(`<div id="html_d8a26bc68a063fa7ba6c5e13d446c678" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Cherif Al Idrissi Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Al Hoceima</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">GMTA // AHU</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">95.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">35.177101135253906</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-3.83951997756958</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_10ffb499268908fb22a2e80cae5ec423.setContent(html_d8a26bc68a063fa7ba6c5e13d446c678);
+            
+        
+
+        circle_marker_9b06c972c6fdc61c6d80e2b6ce446c17.bindPopup(popup_10ffb499268908fb22a2e80cae5ec423)
+        ;
+
+        
+    
+    
+            var circle_marker_eeaf86b5711296356930f914a24d7b1c = L.circleMarker(
+                [35.731741, -5.921459],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_d48158878975d48927560a1cbc7e9b98 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_284095e4c9536d9b7cdfd3a408e36df6 = $(`<div id="html_284095e4c9536d9b7cdfd3a408e36df6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Tangier Ibn Battuta Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Tangier</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">GMTT // TNG</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">62.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">35.731741</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-5.921459</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_d48158878975d48927560a1cbc7e9b98.setContent(html_284095e4c9536d9b7cdfd3a408e36df6);
+            
+        
+
+        circle_marker_eeaf86b5711296356930f914a24d7b1c.bindPopup(popup_d48158878975d48927560a1cbc7e9b98)
+        ;
+
+        
+    
+    
+            var circle_marker_4ae567c322fb8733f330e834fbf5a0f3 = L.circleMarker(
+                [27.176776, 33.796692],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_e767c00c978c7a18dbd0786dc77ced22 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f3614aa4169f29f8059d3db296d23942 = $(`<div id="html_f3614aa4169f29f8059d3db296d23942" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Hurghada International Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Hurghada</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">HEGN // HRG</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">32.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">27.176776</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">33.796692</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_e767c00c978c7a18dbd0786dc77ced22.setContent(html_f3614aa4169f29f8059d3db296d23942);
+            
+        
+
+        circle_marker_4ae567c322fb8733f330e834fbf5a0f3.bindPopup(popup_e767c00c978c7a18dbd0786dc77ced22)
+        ;
+
+        
+    
+    
+            var circle_marker_44c5934ebcb02f2711f9921cb96659f0 = L.circleMarker(
+                [27.977272, 34.394717],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_e27ea81f1ed97f873a58a5a795bbaa18 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_45defaff2d16e0453583007515d4804b = $(`<div id="html_45defaff2d16e0453583007515d4804b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Sharm El Sheikh International Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Sharm El Sheikh</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">HESH // SSH</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">191.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">27.977272</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">34.394717</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_e27ea81f1ed97f873a58a5a795bbaa18.setContent(html_45defaff2d16e0453583007515d4804b);
+            
+        
+
+        circle_marker_44c5934ebcb02f2711f9921cb96659f0.bindPopup(popup_e27ea81f1ed97f873a58a5a795bbaa18)
+        ;
+
+        
+    
+    
+            var circle_marker_c4ddf9f1120e95f355731a727ebb7835 = L.circleMarker(
+                [42.5614013671875, 18.268199920654297],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_49ed5a3eceec9a15fe7f8b751d454049 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_729a9b3a7ebfcdcdc5c8bdf96658ca8c = $(`<div id="html_729a9b3a7ebfcdcdc5c8bdf96658ca8c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Dubrovnik Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Dubrovnik</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LDDU // DBV</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">527.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">42.5614013671875</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">18.268199920654297</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_49ed5a3eceec9a15fe7f8b751d454049.setContent(html_729a9b3a7ebfcdcdc5c8bdf96658ca8c);
+            
+        
+
+        circle_marker_c4ddf9f1120e95f355731a727ebb7835.bindPopup(popup_49ed5a3eceec9a15fe7f8b751d454049)
+        ;
+
+        
+    
+    
+            var circle_marker_5c39b4f5528d83d811373a0d8c389b80 = L.circleMarker(
+                [44.89350128173828, 13.922200202941896],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_7061c429fb5554e7b9c7b0e130f13d8e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c58e40857d382f867837e687bb9c7276 = $(`<div id="html_c58e40857d382f867837e687bb9c7276" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Pula Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Pula</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LDPL // PUY</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">274.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">44.89350128173828</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">13.922200202941896</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_7061c429fb5554e7b9c7b0e130f13d8e.setContent(html_c58e40857d382f867837e687bb9c7276);
+            
+        
+
+        circle_marker_5c39b4f5528d83d811373a0d8c389b80.bindPopup(popup_7061c429fb5554e7b9c7b0e130f13d8e)
+        ;
+
+        
+    
+    
+            var circle_marker_057295666e6cb3ff0bf79dbc03dc40a6 = L.circleMarker(
+                [43.53889846801758, 16.29800033569336],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_c34401c406307d89275dc4e442bd5fd6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_39f4ea2ea244157825764b437e13b298 = $(`<div id="html_39f4ea2ea244157825764b437e13b298" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Split Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Split</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LDSP // SPU</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">79.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">43.53889846801758</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">16.29800033569336</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_c34401c406307d89275dc4e442bd5fd6.setContent(html_39f4ea2ea244157825764b437e13b298);
+            
+        
+
+        circle_marker_057295666e6cb3ff0bf79dbc03dc40a6.bindPopup(popup_c34401c406307d89275dc4e442bd5fd6)
+        ;
+
+        
+    
+    
+            var circle_marker_97a26499ea086308287e852560fa71f4 = L.circleMarker(
+                [44.108299, 15.3467],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_4af049b0c4cc27b4fa3eee0715cc73cb = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_38af5e5fb32d774c9d26c9641888e453 = $(`<div id="html_38af5e5fb32d774c9d26c9641888e453" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Zadar Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Zemunik (Zadar)</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LDZD // ZAD</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">289.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">44.108299</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">15.3467</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_4af049b0c4cc27b4fa3eee0715cc73cb.setContent(html_38af5e5fb32d774c9d26c9641888e453);
+            
+        
+
+        circle_marker_97a26499ea086308287e852560fa71f4.bindPopup(popup_4af049b0c4cc27b4fa3eee0715cc73cb)
+        ;
+
+        
+    
+    
+            var circle_marker_e810d9c18a26785dc191f1be65f1b294 = L.circleMarker(
+                [38.2822, -0.558156],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_8088a3914bc363205843bedfc55e57e2 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ade11612c024cfabf554369431c1af78 = $(`<div id="html_ade11612c024cfabf554369431c1af78" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Alicante-Elche Miguel Hernández Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Alicante</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LEAL // ALC</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">142.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">38.2822</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-0.558156</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_8088a3914bc363205843bedfc55e57e2.setContent(html_ade11612c024cfabf554369431c1af78);
+            
+        
+
+        circle_marker_e810d9c18a26785dc191f1be65f1b294.bindPopup(popup_8088a3914bc363205843bedfc55e57e2)
+        ;
+
+        
+    
+    
+            var circle_marker_c25bfb64f78ecccfbde03271dd8063a9 = L.circleMarker(
+                [36.843899, -2.3701],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_474025b4147fc35cd8c17bca7c9d40fb = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f6f27a19040a52beacb86067411f6fd7 = $(`<div id="html_f6f27a19040a52beacb86067411f6fd7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Almería Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Almería</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LEAM // LEI</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">70.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">36.843899</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-2.3701</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_474025b4147fc35cd8c17bca7c9d40fb.setContent(html_f6f27a19040a52beacb86067411f6fd7);
+            
+        
+
+        circle_marker_c25bfb64f78ecccfbde03271dd8063a9.bindPopup(popup_474025b4147fc35cd8c17bca7c9d40fb)
+        ;
+
+        
+    
+    
+            var circle_marker_2c1db4eb11f53ee17f9840076e23b435 = L.circleMarker(
+                [41.2971, 2.07846],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_299c00ee5c7abbbd315de11130b5e1d2 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7f0a34384d1676129fa72507f5ee1377 = $(`<div id="html_7f0a34384d1676129fa72507f5ee1377" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Josep Tarradellas Barcelona-El Prat Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Barcelona</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LEBL // BCN</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">12.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">41.2971</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">2.07846</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_299c00ee5c7abbbd315de11130b5e1d2.setContent(html_7f0a34384d1676129fa72507f5ee1377);
+            
+        
+
+        circle_marker_2c1db4eb11f53ee17f9840076e23b435.bindPopup(popup_299c00ee5c7abbbd315de11130b5e1d2)
+        ;
+
+        
+    
+    
+            var circle_marker_f0583a2b7c79f632d304994ad72f5194 = L.circleMarker(
+                [41.904639, 2.761774],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_b003c78f4120bd24635c04215f5815c6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_8fdf6327a407d15184af8d8ee7a18517 = $(`<div id="html_8fdf6327a407d15184af8d8ee7a18517" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Girona-Costa Brava Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Girona</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LEGE // GRO</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">468.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">41.904639</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">2.761774</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_b003c78f4120bd24635c04215f5815c6.setContent(html_8fdf6327a407d15184af8d8ee7a18517);
+            
+        
+
+        circle_marker_f0583a2b7c79f632d304994ad72f5194.bindPopup(popup_b003c78f4120bd24635c04215f5815c6)
+        ;
+
+        
+    
+    
+            var circle_marker_05a3aa145ef415642872fb2e570df00c = L.circleMarker(
+                [38.872898, 1.37312],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_dab44c8bebd3ab2e84bdff20e6b85c5c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b8ef0277af7c23605af3d85294a445bc = $(`<div id="html_b8ef0277af7c23605af3d85294a445bc" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Ibiza Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Ibiza (Eivissa)</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LEIB // IBZ</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">24.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">38.872898</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">1.37312</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_dab44c8bebd3ab2e84bdff20e6b85c5c.setContent(html_b8ef0277af7c23605af3d85294a445bc);
+            
+        
+
+        circle_marker_05a3aa145ef415642872fb2e570df00c.bindPopup(popup_dab44c8bebd3ab2e84bdff20e6b85c5c)
+        ;
+
+        
+    
+    
+            var circle_marker_731c43c8d8536ef2ccf2bd2948caa23c = L.circleMarker(
+                [36.6749, -4.49911],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_41b1da804affe5633e4945591aa4a5d2 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_caeb5e347978a46affb9f1aab980cda0 = $(`<div id="html_caeb5e347978a46affb9f1aab980cda0" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Málaga-Costa del Sol Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Málaga</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LEMG // AGP</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">53.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">36.6749</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-4.49911</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_41b1da804affe5633e4945591aa4a5d2.setContent(html_caeb5e347978a46affb9f1aab980cda0);
+            
+        
+
+        circle_marker_731c43c8d8536ef2ccf2bd2948caa23c.bindPopup(popup_41b1da804affe5633e4945591aa4a5d2)
+        ;
+
+        
+    
+    
+            var circle_marker_96ea7629a029d8108ef0fb9acd2e284f = L.circleMarker(
+                [39.551701, 2.73881],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_44eeaaa025b0f84e349bfb0d46888956 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a17804c94eeac2a92c7d8a05689168ad = $(`<div id="html_a17804c94eeac2a92c7d8a05689168ad" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Palma de Mallorca Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Palma de Mallorca</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LEPA // PMI</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">27.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">39.551701</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">2.73881</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_44eeaaa025b0f84e349bfb0d46888956.setContent(html_a17804c94eeac2a92c7d8a05689168ad);
+            
+        
+
+        circle_marker_96ea7629a029d8108ef0fb9acd2e284f.bindPopup(popup_44eeaaa025b0f84e349bfb0d46888956)
+        ;
+
+        
+    
+    
+            var circle_marker_49c8e8e42c4a167aabca58c993159937 = L.circleMarker(
+                [39.4893, -0.481625],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_a65fb685c9797905731edb36c4ec9065 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a9b49cff1f417c5c05a2b14f6167530d = $(`<div id="html_a9b49cff1f417c5c05a2b14f6167530d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Valencia Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Valencia</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LEVC // VLC</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">240.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">39.4893</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-0.481625</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_a65fb685c9797905731edb36c4ec9065.setContent(html_a9b49cff1f417c5c05a2b14f6167530d);
+            
+        
+
+        circle_marker_49c8e8e42c4a167aabca58c993159937.bindPopup(popup_a65fb685c9797905731edb36c4ec9065)
+        ;
+
+        
+    
+    
+            var circle_marker_ef78c83fd9d88e9b11b340b64d003d65 = L.circleMarker(
+                [44.82529830932617, 0.5186110138893127],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_19d06c0b5ba1fbb43907a45a2e56c62d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_480c8086679d0ec1ac029e03844da5d6 = $(`<div id="html_480c8086679d0ec1ac029e03844da5d6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Bergerac-Roumanière Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Bergerac/Roumanière</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LFBE // EGC</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">171.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">44.82529830932617</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">0.5186110138893127</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_19d06c0b5ba1fbb43907a45a2e56c62d.setContent(html_480c8086679d0ec1ac029e03844da5d6);
+            
+        
+
+        circle_marker_ef78c83fd9d88e9b11b340b64d003d65.bindPopup(popup_19d06c0b5ba1fbb43907a45a2e56c62d)
+        ;
+
+        
+    
+    
+            var circle_marker_6e78fa0b33843437b853cfdee4aae105 = L.circleMarker(
+                [42.55270004272461, 9.48373031616211],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_7c2abf8eab361ab5e63b30a55bc8c121 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f7570805db1ba510300e387ec72dedbe = $(`<div id="html_f7570805db1ba510300e387ec72dedbe" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Bastia-Poretta Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Bastia/Poretta</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LFKB // BIA</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">26.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">42.55270004272461</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">9.48373031616211</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_7c2abf8eab361ab5e63b30a55bc8c121.setContent(html_f7570805db1ba510300e387ec72dedbe);
+            
+        
+
+        circle_marker_6e78fa0b33843437b853cfdee4aae105.bindPopup(popup_7c2abf8eab361ab5e63b30a55bc8c121)
+        ;
+
+        
+    
+    
+            var circle_marker_1edd2f99f8f1859a482547e262d6bb22 = L.circleMarker(
+                [45.3629, 5.32937],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_bea8de4513d5adbb9dbc54f7eec332dc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_6670038c7d3efe752ab55d30830b2c68 = $(`<div id="html_6670038c7d3efe752ab55d30830b2c68" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Grenoble-Isère Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Saint-Étienne-de-Saint-Geoirs</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LFLS // GNB</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">1302.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">45.3629</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">5.32937</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_bea8de4513d5adbb9dbc54f7eec332dc.setContent(html_6670038c7d3efe752ab55d30830b2c68);
+            
+        
+
+        circle_marker_1edd2f99f8f1859a482547e262d6bb22.bindPopup(popup_bea8de4513d5adbb9dbc54f7eec332dc)
+        ;
+
+        
+    
+    
+            var circle_marker_65c6a3e9287a50291c0a9c3ea4c0678c = L.circleMarker(
+                [43.57619857788086, 3.96301007270813],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_3f13c3a82894f422e1601de3969c0d1e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b59b982414377c96f900e001c8cbb821 = $(`<div id="html_b59b982414377c96f900e001c8cbb821" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Montpellier-Méditerranée Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Montpellier/Méditerranée</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LFMT // MPL</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">17.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">43.57619857788086</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">3.96301007270813</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_3f13c3a82894f422e1601de3969c0d1e.setContent(html_b59b982414377c96f900e001c8cbb821);
+            
+        
+
+        circle_marker_65c6a3e9287a50291c0a9c3ea4c0678c.bindPopup(popup_3f13c3a82894f422e1601de3969c0d1e)
+        ;
+
+        
+    
+    
+            var circle_marker_8480d69ad48ee8472019f1dbfd87ddcd = L.circleMarker(
+                [43.0973014832, 6.14602994919],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_60844ec0b04d2a00d2fa37c4bb1414f4 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c688236309b85be02c8b9dc8a7365124 = $(`<div id="html_c688236309b85be02c8b9dc8a7365124" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Toulon-Hyères Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Toulon/Hyères/Le Palyvestre</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LFTH // TLN</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">7.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">43.0973014832</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">6.14602994919</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_60844ec0b04d2a00d2fa37c4bb1414f4.setContent(html_c688236309b85be02c8b9dc8a7365124);
+            
+        
+
+        circle_marker_8480d69ad48ee8472019f1dbfd87ddcd.bindPopup(popup_60844ec0b04d2a00d2fa37c4bb1414f4)
+        ;
+
+        
+    
+    
+            var circle_marker_364dde038d2838f68e4590f17d4f106a = L.circleMarker(
+                [35.3396987915, 25.1802997589],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_811352e9966a59d8ed6d8bdc367c52d0 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d2ac9c53d2b005c96d8a9f547ed5c8f7 = $(`<div id="html_d2ac9c53d2b005c96d8a9f547ed5c8f7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Heraklion International Nikos Kazantzakis Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Heraklion</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LGIR // HER</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">115.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">35.3396987915</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">25.1802997589</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_811352e9966a59d8ed6d8bdc367c52d0.setContent(html_d2ac9c53d2b005c96d8a9f547ed5c8f7);
+            
+        
+
+        circle_marker_364dde038d2838f68e4590f17d4f106a.bindPopup(popup_811352e9966a59d8ed6d8bdc367c52d0)
+        ;
+
+        
+    
+    
+            var circle_marker_4ae39c5bc01038f21091afcdb92ff7e3 = L.circleMarker(
+                [36.79330062866211, 27.091699600219727],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_e96c05a8f7131f0c32a85797de6248ef = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_54e3c9c731f3e1de3b7f8cc9f589d44d = $(`<div id="html_54e3c9c731f3e1de3b7f8cc9f589d44d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Kos Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Kos Island</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LGKO // KGS</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">412.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">36.79330062866211</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">27.091699600219727</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_e96c05a8f7131f0c32a85797de6248ef.setContent(html_54e3c9c731f3e1de3b7f8cc9f589d44d);
+            
+        
+
+        circle_marker_4ae39c5bc01038f21091afcdb92ff7e3.bindPopup(popup_e96c05a8f7131f0c32a85797de6248ef)
+        ;
+
+        
+    
+    
+            var circle_marker_f2272606a4c4644552299b42013ae652 = L.circleMarker(
+                [39.601898193359375, 19.911699295043945],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_e514f211d353a41abc2ccc6253257fba = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d0e7f20451ad53c186251de42305e9f7 = $(`<div id="html_d0e7f20451ad53c186251de42305e9f7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Ioannis Kapodistrias International Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Kerkyra Island</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LGKR // CFU</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">6.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">39.601898193359375</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">19.911699295043945</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_e514f211d353a41abc2ccc6253257fba.setContent(html_d0e7f20451ad53c186251de42305e9f7);
+            
+        
+
+        circle_marker_f2272606a4c4644552299b42013ae652.bindPopup(popup_e514f211d353a41abc2ccc6253257fba)
+        ;
+
+        
+    
+    
+            var circle_marker_c80049309432d8744ccdeb834a674266 = L.circleMarker(
+                [36.405399322509766, 28.086200714111328],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_35e70b6e22eecffed5e49db0b5f3f634 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3cbfb8ab579d40566b54b7adffb36673 = $(`<div id="html_3cbfb8ab579d40566b54b7adffb36673" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Diagoras Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Rodes Island</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LGRP // RHO</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">17.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">36.405399322509766</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">28.086200714111328</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_35e70b6e22eecffed5e49db0b5f3f634.setContent(html_3cbfb8ab579d40566b54b7adffb36673);
+            
+        
+
+        circle_marker_c80049309432d8744ccdeb834a674266.bindPopup(popup_35e70b6e22eecffed5e49db0b5f3f634)
+        ;
+
+        
+    
+    
+            var circle_marker_8e3d91685baec84090dde8ef54be3e66 = L.circleMarker(
+                [37.7509, 20.8843],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_ebc5d42e1d8dfc1a722fb9892a54116a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_6bb1d07e66f557ca7919fe9e4bd659e3 = $(`<div id="html_6bb1d07e66f557ca7919fe9e4bd659e3" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Zakynthos International Airport "Dionysios Solomos"</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Zakynthos Island</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LGZA // ZTH</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">15.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">37.7509</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">20.8843</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_ebc5d42e1d8dfc1a722fb9892a54116a.setContent(html_6bb1d07e66f557ca7919fe9e4bd659e3);
+            
+        
+
+        circle_marker_8e3d91685baec84090dde8ef54be3e66.bindPopup(popup_ebc5d42e1d8dfc1a722fb9892a54116a)
+        ;
+
+        
+    
+    
+            var circle_marker_266e73c299a127b9e2b15ddc3a6664e7 = L.circleMarker(
+                [40.6576, 17.947001],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_250cd908fd5db42dd1a8218d256a8e91 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d8185dbb1e2677138d6c66a50e7afb08 = $(`<div id="html_d8185dbb1e2677138d6c66a50e7afb08" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Brindisi Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Brindisi</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LIBR // BDS</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">47.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">40.6576</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">17.947001</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_250cd908fd5db42dd1a8218d256a8e91.setContent(html_d8185dbb1e2677138d6c66a50e7afb08);
+            
+        
+
+        circle_marker_266e73c299a127b9e2b15ddc3a6664e7.bindPopup(popup_250cd908fd5db42dd1a8218d256a8e91)
+        ;
+
+        
+    
+    
+            var circle_marker_7320b8aee45f962db5fb300ec2e9ba2d = L.circleMarker(
+                [38.175999, 13.091],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_dcacd7ee010ee225a536e20f9b93b589 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f7cc87697b24849fbd27db32ed05eb6c = $(`<div id="html_f7cc87697b24849fbd27db32ed05eb6c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Falcone–Borsellino Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Palermo</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LICJ // PMO</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">65.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">38.175999</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">13.091</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_dcacd7ee010ee225a536e20f9b93b589.setContent(html_f7cc87697b24849fbd27db32ed05eb6c);
+            
+        
+
+        circle_marker_7320b8aee45f962db5fb300ec2e9ba2d.bindPopup(popup_dcacd7ee010ee225a536e20f9b93b589)
+        ;
+
+        
+    
+    
+            var circle_marker_563c45506c5bfdf4d41f1670b9c6d090 = L.circleMarker(
+                [45.673901, 9.70417],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_661343ab85bfd9743b9f90f703063498 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a88e4300356d5f754301eb5a8d408dc2 = $(`<div id="html_a88e4300356d5f754301eb5a8d408dc2" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Milan Bergamo Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Milan</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LIME // BGY</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">782.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">45.673901</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">9.70417</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_661343ab85bfd9743b9f90f703063498.setContent(html_a88e4300356d5f754301eb5a8d408dc2);
+            
+        
+
+        circle_marker_563c45506c5bfdf4d41f1670b9c6d090.bindPopup(popup_661343ab85bfd9743b9f90f703063498)
+        ;
+
+        
+    
+    
+            var circle_marker_5bc94c45521686f6fcbc94e0c34085e1 = L.circleMarker(
+                [41.804532, 12.251998],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_e5fd6ba043c6c5a885e13f5be0699fed = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a8257d594258b13653227f6829c2c6d3 = $(`<div id="html_a8257d594258b13653227f6829c2c6d3" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Rome–Fiumicino Leonardo da Vinci International Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Rome</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LIRF // FCO</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">13.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">41.804532</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">12.251998</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_e5fd6ba043c6c5a885e13f5be0699fed.setContent(html_a8257d594258b13653227f6829c2c6d3);
+            
+        
+
+        circle_marker_5bc94c45521686f6fcbc94e0c34085e1.bindPopup(popup_e5fd6ba043c6c5a885e13f5be0699fed)
+        ;
+
+        
+    
+    
+            var circle_marker_9469e704458df964b6058dba2ea6fcfe = L.circleMarker(
+                [43.095901, 12.5132],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_c4203da04884e1e75ae3ab4842a498cf = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7c97a10f18ef92292e509368975d16a9 = $(`<div id="html_7c97a10f18ef92292e509368975d16a9" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Perugia San Francesco d'Assisi – Umbria International Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Perugia</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LIRZ // PEG</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">697.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">43.095901</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">12.5132</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_c4203da04884e1e75ae3ab4842a498cf.setContent(html_7c97a10f18ef92292e509368975d16a9);
+            
+        
+
+        circle_marker_9469e704458df964b6058dba2ea6fcfe.bindPopup(popup_c4203da04884e1e75ae3ab4842a498cf)
+        ;
+
+        
+    
+    
+            var circle_marker_934b6b86c04da1321d1ed643bef19487 = L.circleMarker(
+                [47.260201, 11.344],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_595ad49a4576bd64253ee4b40f23d1a8 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1966fb9546e02749bccf6060cd536288 = $(`<div id="html_1966fb9546e02749bccf6060cd536288" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Innsbruck Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Innsbruck</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LOWI // INN</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">1907.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">47.260201</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">11.344</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_595ad49a4576bd64253ee4b40f23d1a8.setContent(html_1966fb9546e02749bccf6060cd536288);
+            
+        
+
+        circle_marker_934b6b86c04da1321d1ed643bef19487.bindPopup(popup_595ad49a4576bd64253ee4b40f23d1a8)
+        ;
+
+        
+    
+    
+            var circle_marker_51f2e5222530e11f862f57d2fc830a37 = L.circleMarker(
+                [47.7933006287, 13.0043001175],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_0d591954ce99f7ef7ad42563ba7a0298 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_fdc4781fe16fffda5e5f3e25d7407247 = $(`<div id="html_fdc4781fe16fffda5e5f3e25d7407247" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Salzburg Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Salzburg</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LOWS // SZG</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">1411.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">47.7933006287</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">13.0043001175</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_0d591954ce99f7ef7ad42563ba7a0298.setContent(html_fdc4781fe16fffda5e5f3e25d7407247);
+            
+        
+
+        circle_marker_51f2e5222530e11f862f57d2fc830a37.bindPopup(popup_0d591954ce99f7ef7ad42563ba7a0298)
+        ;
+
+        
+    
+    
+            var circle_marker_1d0d418ab9d658baae9f35a4428ff026 = L.circleMarker(
+                [37.0144004822, -7.96590995789],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_7a0c3594a537679764b514be3c333058 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a0461a41b92f8b1a5969376c057674e6 = $(`<div id="html_a0461a41b92f8b1a5969376c057674e6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Faro Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Faro</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LPFR // FAO</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">24.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">37.0144004822</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-7.96590995789</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_7a0c3594a537679764b514be3c333058.setContent(html_a0461a41b92f8b1a5969376c057674e6);
+            
+        
+
+        circle_marker_1d0d418ab9d658baae9f35a4428ff026.bindPopup(popup_7a0c3594a537679764b514be3c333058)
+        ;
+
+        
+    
+    
+            var circle_marker_d5472bd708df913ff73307958a486a65 = L.circleMarker(
+                [38.7813, -9.13592],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_55f7a58f8d8fcf17183584f4245725f9 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_588fe02a2c00896844d1fb1aef1fe92d = $(`<div id="html_588fe02a2c00896844d1fb1aef1fe92d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Humberto Delgado Airport (Lisbon Portela Airport)</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Lisbon</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LPPT // LIS</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">374.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">38.7813</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">-9.13592</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_55f7a58f8d8fcf17183584f4245725f9.setContent(html_588fe02a2c00896844d1fb1aef1fe92d);
+            
+        
+
+        circle_marker_d5472bd708df913ff73307958a486a65.bindPopup(popup_55f7a58f8d8fcf17183584f4245725f9)
+        ;
+
+        
+    
+    
+            var circle_marker_da26fc9afd5ac472d3435d6c87a0d149 = L.circleMarker(
+                [46.23809814453125, 6.108950138092041],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_a64804f7a328eaca3243417f5822e0d8 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_6d30bc728dd155df88b8d80d38079438 = $(`<div id="html_6d30bc728dd155df88b8d80d38079438" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Geneva Cointrin International Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Geneva</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LSGG // GVA</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">1411.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">46.23809814453125</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">6.108950138092041</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_a64804f7a328eaca3243417f5822e0d8.setContent(html_6d30bc728dd155df88b8d80d38079438);
+            
+        
+
+        circle_marker_da26fc9afd5ac472d3435d6c87a0d149.bindPopup(popup_a64804f7a328eaca3243417f5822e0d8)
+        ;
+
+        
+    
+    
+            var circle_marker_73c124f727f81f3b033b94bc419894be = L.circleMarker(
+                [36.898701, 30.800501],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_26ad65e05fa8b974bf1bedb6ea0d6c15 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b3ed5eccc12191d1f77afbd944a86fff = $(`<div id="html_b3ed5eccc12191d1f77afbd944a86fff" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Antalya International Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Antalya</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LTAI // AYT</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">177.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">36.898701</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">30.800501</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_26ad65e05fa8b974bf1bedb6ea0d6c15.setContent(html_b3ed5eccc12191d1f77afbd944a86fff);
+            
+        
+
+        circle_marker_73c124f727f81f3b033b94bc419894be.bindPopup(popup_26ad65e05fa8b974bf1bedb6ea0d6c15)
+        ;
+
+        
+    
+    
+            var circle_marker_166d2faffb3298894731903225a7e15e = L.circleMarker(
+                [37.979, 32.561901],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_ce07366679d818b4010b6b590615993f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_cd711aaa58fc2eb2a497473e472799b3 = $(`<div id="html_cd711aaa58fc2eb2a497473e472799b3" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Konya Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Konya</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LTAN // KYA</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">3392.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">37.979</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">32.561901</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_ce07366679d818b4010b6b590615993f.setContent(html_cd711aaa58fc2eb2a497473e472799b3);
+            
+        
+
+        circle_marker_166d2faffb3298894731903225a7e15e.bindPopup(popup_ce07366679d818b4010b6b590615993f)
+        ;
+
+        
+    
+    
+            var circle_marker_049757c79be8957c2b14709f46662a58 = L.circleMarker(
+                [38.770401001, 35.4953994751],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_883baa7c51b010ebb4aab0cde7b7740f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_78e15f5a9a5a290a18100aa91165a0bf = $(`<div id="html_78e15f5a9a5a290a18100aa91165a0bf" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Kayseri Erkilet Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Kayseri</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LTAU // ASR</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">3463.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">38.770401001</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">35.4953994751</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_883baa7c51b010ebb4aab0cde7b7740f.setContent(html_78e15f5a9a5a290a18100aa91165a0bf);
+            
+        
+
+        circle_marker_049757c79be8957c2b14709f46662a58.bindPopup(popup_883baa7c51b010ebb4aab0cde7b7740f)
+        ;
+
+        
+    
+    
+            var circle_marker_0bcb6a7ed1f2a5ce756ae6a685580a53 = L.circleMarker(
+                [40.898602, 29.3092],
+                {"bubblingMouseEvents": true, "color": "#C63038", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#C63038", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+    
+        var popup_fe16fdbe7923e772cdb72ac46bb879a8 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2a3cbb1e07b428942ef70ea8462617d6 = $(`<div id="html_2a3cbb1e07b428942ef70ea8462617d6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head>  </head> <h4 style="margin-bottom:10"; width="200px">Istanbul Sabiha Gökçen International Airport</h4>      <table style="height: 126px; width: 350px;"> <tbody>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">City</span></td> <td style="width: 150px;background-color: #f4f4f4;">Pendik, Istanbul</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Codes</span></td> <td style="width: 150px;background-color: #f4f4f4;">LTFJ // SAW</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Airport Elevation</span></td> <td style="width: 150px;background-color: #f4f4f4;">312.0</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Latitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">40.898602</td> </tr>  <tr> <td style="background-color: #C63038;"><span style="color: #ffffff;">Longitude</span></td> <td style="width: 150px;background-color: #f4f4f4;">29.3092</td> </tr>  </tbody> </table> </html> </div>`)[0];
+                popup_fe16fdbe7923e772cdb72ac46bb879a8.setContent(html_2a3cbb1e07b428942ef70ea8462617d6);
+            
+        
+
+        circle_marker_0bcb6a7ed1f2a5ce756ae6a685580a53.bindPopup(popup_fe16fdbe7923e772cdb72ac46bb879a8)
+        ;
+
+        
+    
+    
+            var tile_layer_cc1ae172c8df4f838e1519bfc46d0217 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3d451d9d9f283c72a9eea2a02996353d);
+        
+</script>
+</html>
