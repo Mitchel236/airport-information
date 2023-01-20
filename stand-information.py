@@ -15,3 +15,6 @@ data = [['A1', '51.951525738111606', '4.432828576168145'],
 df = pd.DataFrame(data, columns=['STAND', 'LATITUDE', 'LONGITUDE'])
 
 df.to_csv("./datasets/stand-information.csv",index=False)
+
+
+# https://github.com/datasets/airport-codes/blob/master/scripts/process.py
